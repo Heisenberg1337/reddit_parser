@@ -1,0 +1,16 @@
+services:
+  reddit-video-bot:
+    build: .
+    container_name: reddit-video-bot
+    restart: unless-stopped
+    volumes:
+      - reddit-bot-tmp:/tmp/RedditVideoBot
+    environment:
+      - Bot__TelegramBotToken=${TELEGRAM_BOT_TOKEN}
+      - Bot__FfmpegPath=ffmpeg
+      - Bot__TempDirectory=/tmp/RedditVideoBot
+      - Bot__MaxFileSizeMb=50
+      - Bot__RedditUserAgent=RedditVideoBot/1.0
+
+volumes:
+  reddit-bot-tmp:
