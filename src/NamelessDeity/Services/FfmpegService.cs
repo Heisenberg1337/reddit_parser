@@ -2,9 +2,9 @@ using System.Diagnostics;
 using System.Text;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using RedditVideoBot.Configuration;
+using NamelessDeity.Configuration;
 
-namespace RedditVideoBot.Services;
+namespace NamelessDeity.Services;
 
 public interface IFfmpegService
 {

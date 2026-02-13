@@ -1,4 +1,4 @@
-namespace RedditVideoBot.Configuration;
+namespace NamelessDeity.Configuration;
 
 public class BotConfiguration
 {
@@ -6,7 +6,7 @@ public class BotConfiguration
 
     public string TelegramBotToken { get; set; } = string.Empty;
     public string FfmpegPath { get; set; } = "ffmpeg";
-    public string TempDirectory { get; set; } = Path.Combine(Path.GetTempPath(), "RedditVideoBot");
+    public string TempDirectory { get; set; } = Path.Combine(Path.GetTempPath(), "NamelessDeity");
     public int MaxFileSizeMb { get; set; } = 50;
-    public string RedditUserAgent { get; set; } = "RedditVideoBot/1.0";
+    public string RedditUserAgent { get; set; } = "NamelessDeity/1.0";
 }

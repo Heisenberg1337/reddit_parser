@@ -3,7 +3,7 @@ using System.Text.Json;
 using System.Text.RegularExpressions;
 using Microsoft.Extensions.Logging;
 
-namespace RedditVideoBot.Services;
+namespace NamelessDeity.Services;
 
 public interface IInstagramService
 {

@@ -4,11 +4,11 @@ using System.Text.Json;
 using System.Xml.Linq;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using RedditVideoBot.Configuration;
-using RedditVideoBot.Helpers;
-using RedditVideoBot.Models;
+using NamelessDeity.Configuration;
+using NamelessDeity.Helpers;
+using NamelessDeity.Models;
 
-namespace RedditVideoBot.Services;
+namespace NamelessDeity.Services;
 
 public interface IRedditService
 {

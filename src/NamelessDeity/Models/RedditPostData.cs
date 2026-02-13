@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace RedditVideoBot.Models;
+namespace NamelessDeity.Models;
 
 public class RedditListing
 {

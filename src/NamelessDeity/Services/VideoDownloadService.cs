@@ -2,10 +2,10 @@ using System.Net.Http;
 using System.Net.Http.Json;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using RedditVideoBot.Configuration;
-using RedditVideoBot.Models;
+using NamelessDeity.Configuration;
+using NamelessDeity.Models;
 
-namespace RedditVideoBot.Services;
+namespace NamelessDeity.Services;
 
 public interface IVideoDownloadService
 {

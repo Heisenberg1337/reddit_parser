@@ -4,7 +4,7 @@ using Telegram.Bot;
 using Telegram.Bot.Polling;
 using Telegram.Bot.Types;
 
-namespace RedditVideoBot.Services;
+namespace NamelessDeity.Services;
 
 public class UpdateHandler : IUpdateHandler
 {

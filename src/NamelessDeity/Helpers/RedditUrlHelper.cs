@@ -1,6 +1,6 @@
 using System.Text.RegularExpressions;
 
-namespace RedditVideoBot.Helpers;
+namespace NamelessDeity.Helpers;
 
 public static class RedditUrlHelper
 {

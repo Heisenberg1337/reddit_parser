@@ -7,11 +7,11 @@ using Telegram.Bot.Polling;
 using Telegram.Bot.Types;
 using Telegram.Bot.Types.Enums;
 using Telegram.Bot.Types.ReplyMarkups;
-using RedditVideoBot.Configuration;
-using RedditVideoBot.Helpers;
-using RedditVideoBot.Models;
+using NamelessDeity.Configuration;
+using NamelessDeity.Helpers;
+using NamelessDeity.Models;
 
-namespace RedditVideoBot.Services;
+namespace NamelessDeity.Services;
 
 public class TelegramBotService : IHostedService
 {

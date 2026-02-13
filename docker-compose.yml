@@ -1,16 +1,16 @@
 services:
-  reddit-video-bot:
+  nameless-deity:
     build: .
-    container_name: reddit-video-bot
+    container_name: nameless-deity
     restart: unless-stopped
     volumes:
-      - reddit-bot-tmp:/tmp/RedditVideoBot
+      - nameless-deity-tmp:/tmp/NamelessDeity
     environment:
       - Bot__TelegramBotToken=${TELEGRAM_BOT_TOKEN}
       - Bot__FfmpegPath=ffmpeg
-      - Bot__TempDirectory=/tmp/RedditVideoBot
+      - Bot__TempDirectory=/tmp/NamelessDeity
       - Bot__MaxFileSizeMb=50
-      - Bot__RedditUserAgent=RedditVideoBot/1.0
+      - Bot__RedditUserAgent=NamelessDeity/1.0
 
 volumes:
-  reddit-bot-tmp:
+  nameless-deity-tmp:

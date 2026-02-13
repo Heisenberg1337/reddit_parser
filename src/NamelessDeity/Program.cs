@@ -2,11 +2,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
-using RedditVideoBot.Configuration;
-using RedditVideoBot.Services;
+using NamelessDeity.Configuration;
+using NamelessDeity.Services;
 using Telegram.Bot;
 
-namespace RedditVideoBot;
+namespace NamelessDeity;
 
 class Program
 {
@@ -26,7 +26,7 @@ class Program
                 services.AddHttpClient("Reddit", client =>
                 {
                     var botConfig = configuration.GetSection(BotConfiguration.SectionName).Get<BotConfiguration>();
-                    client.DefaultRequestHeaders.UserAgent.ParseAdd(botConfig?.RedditUserAgent ?? "RedditVideoBot/1.0");
+                    client.DefaultRequestHeaders.UserAgent.ParseAdd(botConfig?.RedditUserAgent ?? "NamelessDeity/1.0");
                 });
 
                 services.AddHttpClient("RedditDownload");
